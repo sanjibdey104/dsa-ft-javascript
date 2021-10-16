@@ -1,2 +1,5 @@
 # dsa-ft-javascript
-Learning and implementing Data Structures and Algorithms in JavaScript
+
+🙋‍♂️ My personal tracker to learn and implement data structures and algorithms in javascript.
+🌱 Starting from scratch.
+🚀 From core fundamentals to practical use-cases.
