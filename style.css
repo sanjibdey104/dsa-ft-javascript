@@ -1,0 +1,84 @@
+:root {
+  --primary-font: "Montserrat", sans-serif;
+  --bg-light: #ffffffda;
+  --bg-dark: #121212;
+  --text-light: #ffffffda;
+  --text-dark: #000;
+  --accent-color: #fd917d;
+}
+
+html {
+  font-family: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: var(--primary-font);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+img {
+  display: block;
+}
+
+a,
+button {
+  font-family: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  min-height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  background-image: linear-gradient(92deg, #f35626, #feab3a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hueFade 20s linear infinite;
+}
+
+@keyframes hueFade {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+#subheading {
+  font-size: clamp(1.3rem, 1.85vw, 1.85rem);
+}
